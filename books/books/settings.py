@@ -90,3 +90,6 @@ FEED_MODE = "create"
 
 MONGO_URI = "mongodb://localhost:27017"
 MONGO_DATABASE = "books_db"
+
+LOG_LEVEL = "WARNING"
+LOG_FILE = "book_scraper.log"
