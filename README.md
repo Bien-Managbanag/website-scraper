@@ -50,8 +50,8 @@ books/
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR-REPOSITORY-URL>
-cd <YOUR-REPOSITORY-FOLDER>
+git clone https://github.com/Bien-Managbanag/website-scraper.git
+cd website-scraper
 ```
 
 Navigate to the directory containing `scrapy.cfg` before running Scrapy commands.
@@ -121,14 +121,14 @@ mongosh
 
 Select the database and count the stored books:
 
-```javascript
+```
 use books_db
 db.books.countDocuments({})
 ```
 
 View five books with only their titles and prices:
 
-```javascript
+```
 db.books.find({}, { title: 1, price: 1, _id: 0 }).limit(5)
 ```
 
