@@ -58,9 +58,9 @@ DOWNLOAD_DELAY = 1
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    "books.pipelines.BooksPipeline": 300,
-#}
+ITEM_PIPELINES = {
+    "books.pipelines.MongoPipeline": 300, #indicates that this number is flexible
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
@@ -87,3 +87,6 @@ DOWNLOAD_DELAY = 1
 DOWNLOADER_MIDDLEWARE_RESPONSE_EXCEPTIONS = True
 FEED_EXPORT_ENCODING = "utf-8"
 FEED_MODE = "create"
+
+MONGO_URI = "mongodb://localhost:27017"
+MONGO_DATABASE = "books_db"
